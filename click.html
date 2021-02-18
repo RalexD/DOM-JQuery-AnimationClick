@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
     <div id="myDiv">Some Content</div>
-    <button>Click here</button>
+    <button id="button1">Click here</button>
+    <button id="button2">Click counter</button>
+    <h4>qwery</h4>
+        <p>0</p>
 </head>
 <body>
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script>
-        $("button").click(function(){
+    var clicks=0;
+    $("#button1").click(function(event){
     $("#myDiv").fadeOut(2000);
-});
+    });
+    $
+    $("#button2").click(function(event){
+        clicks++;
+        $("p").text(clicks);
+        $("body").append("<h3>Text<h3>");
+        $("h4").text(event.offsetX);    
+
+    });
     </script>
 </body>
 </html>
