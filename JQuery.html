@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery</title>
+</head>
+<body>
+<h1 id="head">Hello, world</h1>
+<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script>
+    var newText = prompt("Enter new text:");
+    $("#head").text(newText);   // $("#__") gets first element ; .text() to change text 
+    $("body").append("<button>click</button>"); //to add smth  $("choose tag where you want to add").append(html text);
+    for (var i = 0; i < 2; i++) {
+var q = prompt("Enter text again with cycle:");
+$("body").append("<p>" + q + "</p>");
+}
+    </script>
+</body>
+</html>

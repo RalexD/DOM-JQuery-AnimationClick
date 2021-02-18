@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animatio</title>
+</head>
+<body>
+<p id="head">Hello, world</p>
+<h1>qwert</h1>
+<h1>second h1</h1>
+
+<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script>
+    var newText = prompt("Enter new text:");
+    $("#head").text(newText);   // $("#__") gets first element ; .text() to change text 
+    $("#head").fadeOut(3000); //hide elememnt for 3 sec
+    $("h1").text("Этот текст скоро исчезнет").fadeOut(6000).fadeIn(3000).slideUp(2000); //fadeout with text change
+    // fadeOut first-> fadeIn second ->...
+    </script>
+</body>
+</html>
